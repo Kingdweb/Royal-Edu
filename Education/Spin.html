@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinning Wheel</title>
+    <link rel="stylesheet" href="Spin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spinBtn">Spin</div>
+      <div class="Wheel">
+        <div class="number" style="--i: 1; --clr: #dbbfbf">
+          <span>BACKEND PROGRAM</span>
+        </div>
+        <div class="number" style="--i: 2; --clr: #ddd">
+          <span>DIGITAL TOOLS</span>
+        </div>
+        <div class="number" style="--i: 3; --clr: #8b6e6e">
+          <span>SPACE SCIENCE</span>
+        </div>
+        <div class="number" style="--i: 4; --clr: #8349868f">
+          <span>APP DEV</span>
+        </div>
+        <div class="number" style="--i: 5; --clr: #1dd41791">
+          <span>NECO</span>
+        </div>
+        <div class="number" style="--i: 6; --clr: #ff73008f">
+          <span>WAEC</span>
+        </div>
+        <div class="number" style="--i: 7; --clr: #3cb371">
+          <span>JAMB</span>
+        </div>
+        <div class="number" style="--i: 8; --clr: #b346ce">
+          <span>BECE</span>
+        </div>
+      </div>
+    </div>
+    <h4>
+      <input placeholder="bbYour Value" /><button>
+        <a href="Pro.html">bbSend</a>
+      </button>
+    </h4>
+    <script>
+      let Wheel = document.querySelector(".Wheel");
+      let spinBtn = document.querySelector(".spinBtn");
+      let value = Math.ceil(Math.random() * 3600);
+
+      spinBtn.onclick = function () {
+        Wheel.style.transform = "rotate(" + value + "deg)";
+        value += Math.ceil(Math.random() * 3600);
+        resultDisplay.innerText = "The wheel pointed at value ${value + 1}";
+      };
+    </script>
+  </body>
+</html>

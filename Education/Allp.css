@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.border-container {
+  border: 2px solid darkred;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+}
+
+.border-text {
+  color: brown;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: brown;
+  border: 2px solid darkred;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul:hover {
+  cursor: pointer;
+}
+
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+.navbar a:hover {
+  color: blue;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  border: 2px solid darkred;
+  z-index: 1;
+}
+.dropdown:hover {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  border: 2px solid red;
+  z-index: 1;
+  color: blue;
+}
+
+.navbar li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+}
+h2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Line {
+  display: flex;
+  margin: 10px;
+  gap: 50px;
+  justify-content: center;
+}
+.one {
+  border: solid 1px;
+  height: 350px;
+}
+h4 {
+  cursor: pointer;
+}
